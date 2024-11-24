@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RentEaseApp</string>
+    <string name="todo">TODO</string>
+    <string name="renter">RENTER</string>
+    <string name="owner">OWNER</string>
+    <string name="enter_your_name">Enter your name.</string>
+    <string name="enter_your_password">Enter your password.</string>
+    <string name="forget_password_click_here">FORGET PASSWORD! CLICK HERE</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
+    <string name="bg1">BG1</string>
+    <string name="bg2">BG2</string>
+    <string name="bg3">BG3</string>
+    <string name="bg4">bg4</string>
+    <string name="driver_s_license">Driver\'s License</string>
+    <string name="select_files">SELECT FILES...</string>
+</resources>
