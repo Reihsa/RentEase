@@ -14,4 +14,5 @@
     <string name="bg4">bg4</string>
     <string name="driver_s_license">Driver\'s License</string>
     <string name="select_files">SELECT FILES...</string>
+    <string name="sss_id">SSS ID</string>
 </resources>
