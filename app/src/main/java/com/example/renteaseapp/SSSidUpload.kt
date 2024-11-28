@@ -22,42 +22,16 @@ class SSSidUpload : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sssid_upload)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.sssUpload)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        imageView = findViewById(R.id.uploadedSSSfirst)
-        btnPickImage = findViewById(R.id.selectFilesbtn2)
-        btnNext = findViewById(R.id.aAccountSignUpRentingPageAccbtn)
-        btnPickImage.setOnClickListener{
-            pickImage()
-            hasUploaded()
-        }
+        btnNext = findViewById(R.id.toRPAbtn)
         btnNext.setOnClickListener{
             val intent = Intent(this,AccountSignUpRPA::class.java)
             startActivity(intent)
         }
     }
-    @RequiresExtension(extension = Build.VERSION_CODES.R, version = 2)
-    fun pickImage() {
-        val intent = Intent(MediaStore.ACTION_PICK_IMAGES)
-        startActivityForResult(intent, 101)
-    }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == 101) {
-            if (requestCode == 101) {
-                val uri = data?.data
-                imageView.setImageURI(uri)
-                uploaded = true
-            }
-        }
-    }
-    fun hasUploaded(){
-        if (uploaded == true){
-            btnNext.isVisible=true
-        }
-    }
 }
