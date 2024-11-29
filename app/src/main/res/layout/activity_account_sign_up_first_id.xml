@@ -50,7 +50,7 @@
         android:background="@drawable/rounded_cornerb_purplebg"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/guideline88"
-        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline86"
         app:layout_constraintStart_toStartOf="@+id/guideline85"
         app:layout_constraintTop_toTopOf="@+id/guideline87" />
@@ -62,7 +62,7 @@
         android:background="@drawable/rounded_cornerb_purplebg"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/guideline88"
-        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline90"
         app:layout_constraintStart_toStartOf="@+id/guideline89"
         app:layout_constraintTop_toTopOf="@+id/guideline87" />
@@ -74,7 +74,7 @@
         android:background="@drawable/rounded_cornerb_whitebg"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/guideline88"
-        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline92"
         app:layout_constraintStart_toStartOf="@+id/guideline91"
         app:layout_constraintTop_toTopOf="@+id/guideline87" />
@@ -86,7 +86,7 @@
         android:background="@drawable/rounded_cornerb_whitebg"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/guideline88"
-        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline94"
         app:layout_constraintStart_toStartOf="@+id/guideline93"
         app:layout_constraintTop_toTopOf="@+id/guideline87" />
@@ -98,7 +98,7 @@
         android:background="@drawable/rounded_cornerb_whitebg"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/guideline88"
-        app:layout_constraintDimensionRatio="6:1"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline96"
         app:layout_constraintStart_toStartOf="@+id/guideline95"
         app:layout_constraintTop_toTopOf="@+id/guideline87" />

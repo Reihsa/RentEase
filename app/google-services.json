@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096062699184",
+    "project_id": "rentease-ca04d",
+    "storage_bucket": "rentease-ca04d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096062699184:android:55d21839469a62c54d5d75",
+        "android_client_info": {
+          "package_name": "com.example.renteaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY8NabAfBcNIbkMQbDh-GWsv_9oVAzJxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

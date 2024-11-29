@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="skyBlue">#25f4ee</color>
     <color name="purplelight">#3a5887</color>
+    <color name="grey">#e9e9e9</color>
 </resources>

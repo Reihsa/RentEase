@@ -36,6 +36,7 @@ class DriverLicenseUpload : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         btnNext = findViewById(R.id.toThirdSignUpbtn)
         btnNext.setOnClickListener{
             val intent = Intent(this,AccountSignUpSecondID::class.java)

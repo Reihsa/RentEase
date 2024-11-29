@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-11-27T16:07:44.886857400Z">
+        <DropdownSelection timestamp="2024-11-28T21:40:34.992830400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="PhysicalDevice" identifier="serial=a0023f5b6a6b" />
@@ -14,6 +14,9 @@
         <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="DriverLicenseUpload">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="AccountSignUpRPA">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
