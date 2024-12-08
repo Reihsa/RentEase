@@ -3,9 +3,12 @@ package com.example.renteaseapp
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.widget.Adapter
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.annotation.RequiresExtension
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +18,8 @@ import androidx.core.view.WindowInsetsCompat
 class AccountSignUpRPA : AppCompatActivity() {
     private lateinit var btnNext: Button
     private lateinit var autoCompleteTextView: AutoCompleteTextView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +33,7 @@ class AccountSignUpRPA : AppCompatActivity() {
         val regions = resources.getStringArray(R.array.region)
         val arrayAdapter = ArrayAdapter(this,R.layout.dropdownitem, regions)
         autoCompleteTextView.setAdapter(arrayAdapter)
+
 
         btnNext = findViewById(R.id.toMainMenu)
         btnNext.setOnClickListener{

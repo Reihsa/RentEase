@@ -125,7 +125,6 @@
         app:autoSizeMaxTextSize="100sp"
         app:autoSizeMinTextSize="12sp"
         app:autoSizeTextType="uniform"
-        android:hint="@string/select_region_city"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         app:layout_constraintDimensionRatio="100:16"
         app:layout_constraintBottom_toTopOf="@+id/guideline188"
@@ -134,6 +133,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline187">
 
         <AutoCompleteTextView
+            android:hint="@string/select_region_city"
             android:background="@color/grey"
             android:id="@+id/autoCompleteTextView"
             android:layout_width="match_parent"
@@ -485,7 +485,7 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="100:65"
+        app:layout_constraintDimensionRatio="100:48"
         android:background="@color/grey"
         android:ems="10"
         android:gravity="start|top"
@@ -595,7 +595,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.83" />
+        app:layout_constraintGuide_percent="0.76" />
 
 
 
