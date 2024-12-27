@@ -29,7 +29,7 @@
         android:background="@drawable/rounded_cornerb_purplebg"
         android:fontFamily="@font/lilita_one"
         android:gravity="center"
-        android:padding="20dp"
+        android:padding="13dp"
         android:text="@string/choose_first_id"
         android:textAlignment="center"
         android:textColor="@color/white"

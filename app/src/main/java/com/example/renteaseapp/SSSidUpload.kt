@@ -53,8 +53,19 @@ class SSSidUpload : AppCompatActivity() {
         imageUri = createImageUri()
 
         btnNext.setOnClickListener{
-            val intent = Intent(this,AccountSignUpRPA::class.java)
-            startActivity(intent)
+            val firstIDUploaded: Boolean = signupInfo.firstIDUploaded
+            val secondIDUpload:Boolean = signupInfo.secondIDUploaded
+            if(!firstIDUploaded){
+                signupInfo.SSSID= true
+                signupInfo.firstIDUploaded = true
+                val intent = Intent(this,AccountSignUpSecondID::class.java)
+                startActivity(intent)
+            }else if(!secondIDUpload){
+                signupInfo.SSSID= true
+                signupInfo.secondIDUploaded= true
+                val intent = Intent(this,AccountSignUpRPA::class.java)
+                startActivity(intent)
+            }
         }
         btnPickImage.setOnClickListener{
             imagePickerDialogue()

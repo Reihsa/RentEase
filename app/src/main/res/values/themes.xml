@@ -4,6 +4,12 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:itemBackground">@color/white</item>
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">24dp</item>
+
     </style>
 
     <style name="Theme.RentEaseApp" parent="Base.Theme.RentEaseApp" />

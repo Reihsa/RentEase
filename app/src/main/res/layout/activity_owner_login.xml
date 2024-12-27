@@ -33,13 +33,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline13" />
 
     <EditText
-        android:id="@+id/enterUsernameOwner"
+        android:id="@+id/enterEmailOwner"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_corner_white"
         android:ems="10"
         android:fontFamily="@font/fredoka_one"
-        android:hint="@string/enter_your_name"
+        android:hint="Enter email."
         android:inputType="text"
         android:padding="12dp"
         android:textColor="@color/white"
@@ -59,7 +59,7 @@
         android:background="@drawable/rounded_corner_white"
         android:ems="10"
         android:fontFamily="@font/fredoka_one"
-        android:hint="@string/enter_your_password"
+        android:hint="Enter password."
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="@color/white"

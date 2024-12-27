@@ -114,32 +114,35 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline120"
         app:layout_constraintDimensionRatio="100:125"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline100"
         app:layout_constraintVertical_bias="0.569" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:textColor="@color/black"
         app:autoSizeMaxTextSize="100sp"
         app:autoSizeMinTextSize="12sp"
         app:autoSizeTextType="uniform"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        app:layout_constraintDimensionRatio="100:16"
         app:layout_constraintBottom_toTopOf="@+id/guideline188"
+        app:layout_constraintDimensionRatio="100:28"
         app:layout_constraintEnd_toStartOf="@+id/guideline92"
         app:layout_constraintStart_toStartOf="@+id/guideline85"
         app:layout_constraintTop_toTopOf="@+id/guideline187">
 
         <AutoCompleteTextView
-            android:hint="@string/select_region_city"
-            android:background="@color/grey"
-            android:id="@+id/autoCompleteTextView"
+            android:id="@+id/Regiontb"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:background="@color/grey"
             android:inputType="none"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeTextType="uniform"
             tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -335,7 +338,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline156" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/toMainMenu"
+        android:id="@+id/toReviewinfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/login_signup_bg"
@@ -344,7 +347,7 @@
         android:text="Continue"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:autoSizeMaxTextSize="100sp"
         app:autoSizeMinTextSize="12sp"
         app:autoSizeTextType="uniform"
@@ -397,7 +400,7 @@
         app:layout_constraintGuide_percent="0.15185185" />
 
     <EditText
-        android:id="@+id/pageNametxtbox"
+        android:id="@+id/pageNametxt"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/grey"
@@ -406,7 +409,7 @@
         android:padding="5dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/guideline182"
-        app:layout_constraintDimensionRatio="100:9"
+        app:layout_constraintDimensionRatio="100:8"
         app:layout_constraintEnd_toStartOf="@+id/guideline96"
         app:layout_constraintStart_toStartOf="@+id/guideline85"
         app:layout_constraintTop_toTopOf="@+id/guideline181"
@@ -467,14 +470,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/montserrat"
+        android:padding="2dp"
         android:text="@string/region_city"
         android:textColor="@color/black"
         app:autoSizeMaxTextSize="100sp"
         app:autoSizeMinTextSize="3sp"
-        android:padding="2dp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/guideline186"
-        app:layout_constraintDimensionRatio="100:19"
+        app:layout_constraintDimensionRatio="100:20"
         app:layout_constraintEnd_toStartOf="@+id/guideline175"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline85"
@@ -482,16 +485,16 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/pageDescriptionmtb"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="100:48"
         android:background="@color/grey"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/guideline192"
+        app:layout_constraintDimensionRatio="100:48"
         app:layout_constraintEnd_toStartOf="@+id/guideline96"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline85"
@@ -546,7 +549,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
+        app:layout_constraintGuide_percent="0.43" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline186"
@@ -560,43 +563,126 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.47" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline188"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.51" />
+        app:layout_constraintGuide_percent="0.53" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline189"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.52" />
+        app:layout_constraintGuide_percent="0.54" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline190"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.55" />
+        app:layout_constraintGuide_percent="0.57" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline191"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.56" />
+        app:layout_constraintGuide_percent="0.58" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline192"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.76" />
+        app:layout_constraintGuide_percent="0.78" />
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnaddprofilephoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/graycorner_whitebg"
+        android:padding="10dp"
+        android:text="Add photos"
+        android:textColor="@color/black"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline200"
+        app:layout_constraintDimensionRatio="100:20"
+        app:layout_constraintEnd_toStartOf="@+id/guideline94"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline89"
+        app:layout_constraintTop_toTopOf="@+id/guideline199"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/removeImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/x_symbol_svgrepo_com"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintDimensionRatio="100:100"
+        app:layout_constraintEnd_toStartOf="@+id/guideline206"
+        app:layout_constraintStart_toStartOf="@+id/guideline205"
+        app:layout_constraintTop_toTopOf="@+id/guideline199"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline199"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/profileimagename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:text=""
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintDimensionRatio="100:11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline91"
+        app:layout_constraintStart_toStartOf="@+id/guideline85"
+        app:layout_constraintTop_toTopOf="@+id/guideline199" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline204"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline205"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45555556" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline206"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

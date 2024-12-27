@@ -19,8 +19,14 @@ class ChooseOwnerRenter : AppCompatActivity() {
             insets
         }
         val btnOwnerLogin = findViewById<Button>(R.id.buttonToOwnerLogin)
+        val btnRenterLogin = findViewById<Button>(R.id.buttonToRenterLogin)
         btnOwnerLogin.setOnClickListener{
             val intent = Intent(this,ownerLogin::class.java)
+            startActivity(intent)
+        }
+
+        btnRenterLogin.setOnClickListener{
+            val intent = Intent(this,RenterLogin::class.java)
             startActivity(intent)
         }
     }

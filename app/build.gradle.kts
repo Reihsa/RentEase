@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application")
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
 }
@@ -27,6 +27,11 @@ android {
             )
         }
     }
+
+    buildFeatures{
+        viewBinding =  true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -42,10 +47,23 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.database)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.firebase:firebase-analytics")
-    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
-
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.google.firebase.analytics)
+    implementation (libs.circleimageview)
+    implementation (libs.glide)
+    annotationProcessor (libs.compiler)
+    implementation(libs.okhttp)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
+    implementation (libs.xcom.retrofit)
+    implementation (libs.converter.gson)
 }

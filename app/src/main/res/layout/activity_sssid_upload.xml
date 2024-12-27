@@ -755,7 +755,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.79" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/removeImage1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -767,7 +767,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline197"
         app:layout_constraintTop_toTopOf="@+id/guideline193" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/removeImage2"
         android:visibility="invisible"
         android:layout_width="0dp"

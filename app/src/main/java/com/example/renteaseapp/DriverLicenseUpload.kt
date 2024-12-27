@@ -27,6 +27,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.io.File
+import com.example.renteaseapp.signupInfo
 
 class DriverLicenseUpload : AppCompatActivity() {
     private lateinit var btnPickImage: Button
@@ -57,8 +58,19 @@ class DriverLicenseUpload : AppCompatActivity() {
         btnPickImage = findViewById(R.id.selectFilesbtn)
         imageUri = createImageUri()
         btnNext.setOnClickListener{
-            val intent = Intent(this,AccountSignUpSecondID::class.java)
-            startActivity(intent)
+            val firstIDUploaded: Boolean = signupInfo.firstIDUploaded
+            val secondIDUpload:Boolean = signupInfo.secondIDUploaded
+            if(!firstIDUploaded){
+                signupInfo.DL= true
+                signupInfo.firstIDUploaded = true
+                val intent = Intent(this,AccountSignUpSecondID::class.java)
+                startActivity(intent)
+            }else if(!secondIDUpload){
+                signupInfo.DL= true
+                signupInfo.secondIDUploaded= true
+                val intent = Intent(this,AccountSignUpRPA::class.java)
+                startActivity(intent)
+            }
         }
         btnPickImage.setOnClickListener{
             imagePickerDialogue()

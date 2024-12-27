@@ -13,6 +13,42 @@
         android:theme="@style/Theme.RentEaseApp"
         tools:targetApi="31">
         <activity
+            android:name=".MainAppPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainApp"
+            android:exported="false" />
+        <activity
+            android:name=".PostMoreDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSignUpPageOneRenter"
+            android:exported="false" />
+        <activity
+            android:name=".RenterLogin"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerNewsfeed"
+            android:exported="false" />
+        <activity
+            android:name=".HDMFIDUpload"
+            android:exported="false" />
+        <activity
+            android:name=".PRCIDUpload"
+            android:exported="false" />
+        <activity
+            android:name=".PostalIDUpload"
+            android:exported="false" />
+        <activity
+            android:name=".UMIDUpload"
+            android:exported="false" />
+        <activity
+            android:name=".NationalIDUpload"
+            android:exported="false" />
+        <activity
+            android:name=".signUpReviewInfo"
+            android:exported="false" />
+        <activity
             android:name=".AccountSignUpRPA"
             android:exported="false" />
         <activity
@@ -49,18 +85,16 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <provider
-            android:authorities="com.example.renteaseapp.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.renteaseapp.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/paths"/>
+                android:resource="@xml/paths" />
         </provider>
-
-
-
     </application>
 
 </manifest>

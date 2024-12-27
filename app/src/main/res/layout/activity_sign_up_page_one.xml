@@ -174,11 +174,13 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline72"
         app:layout_constraintDimensionRatio="14:3"
         app:layout_constraintEnd_toStartOf="@+id/guideline74"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline73"
-        app:layout_constraintTop_toTopOf="@+id/guideline71" />
+        app:layout_constraintTop_toTopOf="@+id/guideline71"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/EnterUsernameSignup"
+        android:id="@+id/enterUsernameSignup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_cornerb_whitebg"
@@ -221,13 +223,14 @@
         app:layout_constraintTop_toTopOf="@+id/guideline63" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/enterContactNumSignup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_cornerb_whitebg"
         android:ems="10"
         android:fontFamily="@font/lilita_one"
         android:hint="Enter your contact number."
+        android:maxLength="14"
         android:inputType="phone"
         android:padding="12dp"
         android:textColor="@color/black"
@@ -239,13 +242,14 @@
         app:layout_constraintTop_toTopOf="@+id/guideline65" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/enterPasswordSignup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_cornerb_whitebg"
         android:ems="10"
         android:fontFamily="@font/lilita_one"
         android:hint="Enter your password."
+        android:maxLength="12"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="@color/black"
@@ -257,7 +261,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline67" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/reenterPasswordSignup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/rounded_cornerb_whitebg"
@@ -275,6 +279,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline69" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:visibility="invisible"
         android:id="@+id/toSecondSignUpbtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
