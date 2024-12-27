@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA"
+    tools:context=".MainActivity">
+
+    <!-- White Background -->
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rentingPolBtn"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-250dp"
+        android:text="Renting Policies"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginTop="440dp" />
+
+
+    <TextView
+        android:id="@+id/myProfileWhiteBG"
+        android:layout_width="448dp"
+        android:layout_height="96dp"
+        android:background="@drawable/rectange_whitebg"
+        tools:layout_editor_absoluteX="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="292dp"
+        tools:layout_marginStart="-32dp"
+        tools:layout_marginTop="290dp" />
+
+
+    <TextView
+        android:id="@+id/myRentingWhiteBG2"
+        android:layout_width="424dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/rectange_whitebg"
+        android:contentDescription="White BG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="-1dp"
+        tools:layout_marginTop="145dp" />
+
+    <TextView
+        android:id="@+id/midWhiteBG"
+        android:layout_width="413dp"
+        android:layout_height="98dp"
+        android:background="@drawable/rectange_whitebg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="0dp"
+        tools:layout_marginTop="639dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numfollowingTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/followerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Follower"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numfollowerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/followingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Following"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myRentingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="My Renting"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Rent"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/friendsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Friends"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/charismaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Charisma"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/charismaTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Wallet"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ongoingRentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Ongoing Rent"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/yourPageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="Your Page"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TransacWhiteBG3"
+        android:layout_width="428dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-280dp"
+        android:text="Transaction"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="247dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="-1dp"
+        tools:layout_marginTop="240dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profileButton"
+        android:layout_width="416dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="384dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-320dp"
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="-6dp"
+        tools:layout_marginTop="390dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/langWhiteBG7"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-300dp"
+        android:text="Language"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginTop="490dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aboutButton"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-330dp"
+        android:text="About"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginTop="540dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/helpWhiteBG5"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectange_whitebg"
+        android:fontFamily="@font/lilita_one"
+        android:paddingStart="-340dp"
+        android:text="Help"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="-2dp"
+        tools:layout_marginTop="590dp" />
+
+    <TextView
+        android:id="@+id/myProfTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="My Profile"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="Back"
+        app:srcCompat="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginStart="16dp"
+        app:layout_marginTop="16dp" />
+
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:contentDescription="Settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/chatButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="Chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat"
+        tools:layout_marginStart="356dp"
+        tools:layout_marginTop="42dp" />
+
+
+    <ImageButton
+        android:id="@+id/yourPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Your page"
+        app:srcCompat="@drawable/your_page"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="173dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_marginStart="320dp"
+        tools:layout_marginTop="167dp" />
+
+    <ImageButton
+        android:id="@+id/rentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="168dp"
+        android:background="@null"
+        android:contentDescription="Rent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rent" />
+
+    <ImageButton
+        android:id="@+id/userProfileButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/circular_border"
+        android:contentDescription="User Profile"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_profile" />
+
+    <ImageButton
+        android:id="@+id/walletButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Wallet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallet"
+        tools:layout_marginStart="318dp"
+        tools:layout_marginTop="318dp" />
+
+    <ImageButton
+        android:id="@+id/friendsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Friends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/friends"
+        tools:layout_marginStart="71dp"
+        tools:layout_marginTop="318dp" />
+
+    <ImageButton
+        android:id="@+id/charismaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="Charisma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/charisma"
+        tools:layout_marginStart="193dp"
+        tools:layout_marginTop="318dp" />
+
+    <ImageButton
+        android:id="@+id/ongoingRentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="172dp"
+        android:background="@null"
+        android:contentDescription="Ongoing Rent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ongoing_rent" />
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="664dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/lilita_one"
+        android:text="Logout"
+        android:textSize="14sp"
+        app:layout_constraintMarginStart="168dp"
+        app:layout_constraintMarginTop="679dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/switchAccountbutton"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="664dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/lilita_one"
+        android:text="Switch Account"
+        android:textSize="14sp"
+        app:layout_constraintMarginStart="128dp"
+        app:layout_constraintMarginTop="644dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rent_item_icon"
+        android:contentDescription="Rent an item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
